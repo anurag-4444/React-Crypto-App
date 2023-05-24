@@ -1,0 +1,32 @@
+.main-card {
+    height: 170px;
+    width: 205px;
+    margin: 11px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 6px 1px #4e464699;
+    border-radius: 5px;
+    // transform: scale(1);
+    transition: all .3s ease-in-out;
+    &:hover{
+        transform: scale(1.05);
+    }
+
+
+    .Card {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        flex-direction: column;
+        gap: 15px;
+        text-decoration: none;
+        color: #000;
+        font-family: sans-serif;
+
+        img{
+            width: 70px;
+        }
+    }
+}

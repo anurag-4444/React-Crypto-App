@@ -1,0 +1,40 @@
+.box {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: black;
+    filter: grayscale(1);
+    position: relative;
+
+    img {
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+        animation: crypto 2s linear infinite alternate-reverse;
+    }
+
+    .xcrypto {
+        position: absolute;
+        color: white;
+        bottom: 0;
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+}
+
+@keyframes crypto {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        height: auto;
+    }
+}

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+.coinDetail {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 0;
+
+
+    .btns {
+        width: 97%;
+        display: flex;
+        gap: 5px;
+        margin: auto;
+
+        .btn {
+            height: 23px;
+            width: 43px;
+            font-size: 1rem;
+            line-height: 23px;
+            text-align: center;
+            background: #9e9e9e61;
+            border-radius: 5px;
+            font-weight: lighter;
+            cursor: pointer;
+
+            &:hover {
+                background: rgb(158 158 158 / 61%);
+            }
+        }
+
+    }
+
+
+    .coinDetailCard {
+        width: 100%;
+        display: flex;
+        gap: 6%;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 5px;
+        position: relative;
+        margin-top: 10px;
+
+
+
+        .badge {
+            height: 26px;
+            width: 43px;
+            position: absolute;
+            background: red;
+            top: 0;
+            right: 5px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .radio {
+            display: flex;
+            justify-content: center;
+
+
+            input[type="radio"] {
+                margin-right: 1%;
+                cursor: pointer;
+            }
+
+            label {
+                margin-right: 2%;
+            }
+        }
+
+        .coinCard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+
+            img {
+                height: 100px;
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                &:nth-child(1) {
+                    padding-left: 10px;
+                }
+
+            }
+
+            .increaseAndDecrease {
+
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                .increaseSymbol {
+                    height: 8px;
+                    width: 0px;
+                    border-bottom: 8px solid green;
+                    border-right: 8px solid white;
+                    border-left: 8px solid white;
+                }
+
+                .decreaseSymbol {
+                    height: 8px;
+                    width: 0px;
+                    border-top: 8px solid red;
+                    border-right: 8px solid white;
+                    border-left: 8px solid white;
+                }
+            }
+
+            .loadbar {
+                height: 15px;
+                background: #d1c2c2;
+                border-radius: 3px;
+                align-self: stretch;
+                margin: 0px 10px;
+
+
+                div {
+                    height: 15px;
+                    width: 50%;
+                    background: #45504a;
+                    border-radius: 3px;
+                }
+
+            }
+
+            .definition {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                padding: 0px 10px;
+
+                .one {
+                    background: pink;
+                    border-radius: 3px;
+                }
+
+                .three {
+                    background: lightblue;
+                    border-radius: 3px;
+                }
+            }
+
+            .maxSupply {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+
+                p {
+                    font-family: "Bebas Neue", sans-serif;
+                }
+            }
+        }
+    }
+
+
+}
